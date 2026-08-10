@@ -67,12 +67,12 @@
     if (!links || !links.length) return "";
     var items = links
       .map(function (l) {
-        return U.linkMarkup(l, "card__link");
+        return U.linkMarkup(l, "link-button", true);
       })
       .filter(Boolean)
       .join("");
     return items
-      ? '<div class="card__links project__links">' + items + "</div>"
+      ? '<div class="social-list project__links">' + items + "</div>"
       : "";
   }
 

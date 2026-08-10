@@ -67,17 +67,26 @@
     );
   }
 
-  /** External link button; returns "" when the url is empty. */
-  function linkMarkup(link, className) {
+  /**
+   * External link button; returns "" when the url is empty.
+   * "link.icon" is optional and must match a key in icons.js.
+   * With iconFirst, the icon leads the label at full size — the pill style
+   * used by the contact section.
+   */
+  function linkMarkup(link, className, iconFirst) {
     if (!link || !link.url) return "";
+    var label = escape(link.label || "Link");
+    var icon = window.Icons.svg(
+      link.icon || "link",
+      iconFirst ? "" : "icon--sm"
+    );
     return (
       '<a class="' +
       (className || "card__link") +
       '" href="' +
       escape(link.url) +
       '" target="_blank" rel="noopener">' +
-      escape(link.label || "Link") +
-      window.Icons.svg("link", "icon--sm") +
+      (iconFirst ? icon + "<span>" + label + "</span>" : label + icon) +
       "</a>"
     );
   }
