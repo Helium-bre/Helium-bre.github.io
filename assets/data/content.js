@@ -16,18 +16,18 @@ window.PORTFOLIO = {
   /* Basic info, shown in the header, hero and contact sections.      */
   /* ---------------------------------------------------------------- */
   profile: {
-    name: "Your Name",
+    name: "Hugo HE",
     // Short professional title shown under your name.
-    title: "Researcher · Engineer",
+    title: "Computer Eng. @ McGill - Research Assistant @ MRL",
     // One-line tagline for the hero section.
-    tagline: "I build things and study how they work.",
+    tagline: "Your average tech fan",
     // A few sentences about you. Each string is its own paragraph.
     about: [
-      "Write a short introduction here. Describe who you are, what you work on, and what you care about.",
-      "Add a second paragraph if you like — for example your current focus, research interests, or what you are looking for.",
+      "Currently in my last year of Bachelor's at McGill University. ",
+      "My current focus is into robotics, more specifically teleoperation systems and representation learning",
     ],
-    location: "City, Country",
-    email: "you@example.com",
+    location: "Montreal, Canada",
+    email: "hehugo1024@gmail.com",
     // Path to your photo. Put the file in assets/images/profile/.
     // Leave as "" to show your initials instead.
     avatar: "",
@@ -38,10 +38,10 @@ window.PORTFOLIO = {
     // "icon" must match a key in assets/js/icons.js (github, linkedin,
     // scholar, orcid, email, link, twitter).
     socials: [
-      { label: "GitHub", url: "https://github.com/yourusername", icon: "github" },
-      { label: "LinkedIn", url: "https://linkedin.com/in/yourusername", icon: "linkedin" },
-      { label: "Google Scholar", url: "", icon: "scholar" },
-      { label: "ORCID", url: "", icon: "orcid" },
+      { label: "GitHub", url: "https://github.com/Helium-bre", icon: "github" },
+      { label: "LinkedIn", url: "https://www.linkedin.com/in/hugo-he1024/", icon: "linkedin" },
+      // { label: "Google Scholar", url: "", icon: "scholar" },
+      // { label: "ORCID", url: "", icon: "orcid" },
     ],
   },
 
@@ -50,27 +50,46 @@ window.PORTFOLIO = {
   /* ---------------------------------------------------------------- */
   experience: [
     {
-      role: "Job Title",
-      organization: "Company or Lab",
-      location: "City, Country",
-      start: "2023",
-      end: "Present",
-      summary: "One sentence on your role and what the team does.",
+      role: "Software Developper Intern",
+      organization: "OneSpan Inc.",
+      location: "Montreal, Canada",
+      start: "05/2026",
+      end: "08/2026",
+      summary: "Backend Developper in the Digital Agreement branch",
       highlights: [
-        "A concrete accomplishment, ideally with a measurable result.",
-        "Another responsibility or achievement.",
+        "Part of the major team responsible for implementing the single sign-on service of the OneSpan Sign software, used by the US government and major Canadian banks.",
+        "Implemented features such as database retention scripts using CRON jobs, database encryption using Amazon KMS and automatic email sending using Amazon SES.",
+        "Assisted on the deployment of the service on production environments. "
+        // "Another responsibility or achievement.",
       ],
-      tags: ["Skill", "Tool", "Domain"],
+      tags: ["SpringBoot", "Kubernetes", "AWS"],
     },
     {
-      role: "Previous Job Title",
-      organization: "Previous Company",
-      location: "City, Country",
-      start: "2020",
-      end: "2023",
-      summary: "What you did here.",
-      highlights: ["Notable accomplishment."],
-      tags: ["Skill", "Tool"],
+      role: "Research Assistant",
+      organization: "McGill Mobile Robotics Lab",
+      location: "Montreal, Canada",
+      start: "09/2025",
+      end: "Present",
+      summary: "",
+      highlights: [
+        "Robot Learning, Real-time teleoperation, Deployment on real robots, ...",
+        "More in the Research section",
+      ],
+      tags: ["Robotics", "ROS2", "Simulation"],
+    },
+    {
+      role: "AI Research Intern",
+      organization: "Huawei Technologies Co., Ltd.",
+      location: "Paris, France",
+      start: "05/2025",
+      end: "08/2025",
+      summary: "Research in the AI4NET team, focused on anomaly detection",
+      highlights: ["Built an unsupervisedd anomaly classifier pipeline using statistical machine learning",
+                   "Used GMM and other distribution fitting techniques with hypothesis testing for correctly learning the representation of anomalies",
+                   "Beat 6 out of 7 state-of-the-art anomaly thresholders in public and private benchmarks."
+
+      ],
+      tags: ["scikit-learn", "pandas"],
     },
   ],
 
@@ -79,13 +98,15 @@ window.PORTFOLIO = {
   /* ---------------------------------------------------------------- */
   education: [
     {
-      degree: "Ph.D. / M.Sc. / B.Sc. in Field",
-      institution: "University Name",
-      location: "City, Country",
-      start: "2016",
-      end: "2020",
-      summary: "Thesis title, specialization, or honors.",
-      highlights: ["Relevant coursework, distinction, or activity."],
+      degree: "\ B.Eng. in Computer Engineering",
+      institution: "McGill University",
+      location: "Montreal, Canada",
+      start: "2023",
+      end: "2027",
+      summary: "Minor in Biomedical Engineering",
+      highlights: ["Relevant Courses: Applied Robotics, Computer Vision, Operating Systems, Biomedical Instrumentation",
+                   "Extracuricular Activities: Robotics Club, McGill Biomechanics, McGill Mentorship Program"
+      ],
     },
   ],
 
@@ -94,18 +115,18 @@ window.PORTFOLIO = {
   /* ---------------------------------------------------------------- */
   achievements: [
     {
-      title: "Award or Honor",
-      issuer: "Awarding Body",
-      date: "2024",
-      description: "One line on why it was given or what it recognizes.",
+      title: "RoboHacks Winner",
+      issuer: "McGill Robotics",
+      date: "2025",
+      description: "Winner of the Technical Challenge of the Robohacks 2025 hackathon.",
     },
     {
-      title: "Certification or Publication",
-      issuer: "Issuer or Venue",
-      date: "2023",
-      description: "Short description. Add a link below if relevant.",
+      title: "MAIS Hacks Bronze Prize",
+      issuer: "McGill AI Society",
+      date: "2025",
+      description: "Third Place at the McGill AI Society Hackaton 2025",
       // Optional link, shown as a button on the card.
-      link: { label: "View", url: "" },
+      // link: { label: "View", url: "" },
     },
   ],
 
@@ -116,11 +137,11 @@ window.PORTFOLIO = {
   /* ---------------------------------------------------------------- */
   research: {
     // Lab / group and the period you were there (shown under the title).
-    lab: "Lab or Research Group, University",
-    period: "2018 – 2021",
+    lab: "MRL, McGill University",
+    period: "2025 - Present",
     // Intro paragraphs at the top of the page. Each string is a paragraph.
     intro: [
-      "Describe your overall role in the lab: what the group works on, how you contributed, and what you took from the experience.",
+      "Focused on teleoperation and datacollection systems, and AI training pipelines. ",
       "Most of my work supported other researchers across the projects below.",
     ],
     // One entry per project. They render top to bottom on the page.
@@ -128,41 +149,42 @@ window.PORTFOLIO = {
       {
         // "slug" gives the section a stable #anchor (research.html#project-one).
         // Omit it to auto-generate one from the title.
-        slug: "project-one",
-        title: "Project One",
-        role: "Research Assistant — supporting Dr. Researcher",
-        period: "2019 – 2020",
+        slug: "DexSuite",
+        title: "DexSuite",
+        role: "Research Assistant - supporting A. El Houssaini (Msc.) ",
+        period: "2025 - 2026",
         // One-line summary, shown emphasized at the top of the project.
-        summary: "A sentence summarising the project and your contribution.",
+        summary: "Robotics Simulator and Benchmark for Dexterous Manipulation",
         // Longer write-up. Each string is its own paragraph.
         body: [
-          "Explain the project: the research question, what the team was building, and specifically what you did to help.",
-          "Add as many paragraphs as you need.",
+          "A simulator based on the Genesis physics engine, that has 30+ environments, 12+ manipulators and 10+ end-effectors. Cross embodiement is supported accross manipulators and grippers, giving thousands of configurations",
+          "Solves the issue related to the lack of support for dexterous configurations in simulation, by providing realistic physics and support for parallel environments for RL training, and a dataset of 500+ trajectory across several configurations and environments.",
+          "Second contributor among 10+ authors, involving people from Kinova and Google Deepmind. Submitted to the RA-L journal."
         ],
-        tags: ["Topic", "Method", "Tool"],
+        tags: ["Simulation", "HTC Vive", "Genesis AI", "robomimic"],
         // Images and videos shown in a gallery under the text.
         // type is one of:
         //   "image" — a picture in assets/images/projects/
         //   "video" — a video file you host in assets/videos/
         //   "embed" — a YouTube/Vimeo *embed* URL (…/embed/VIDEO_ID)
-        media: [
-          {
-            type: "image",
-            src: "assets/images/projects/example.jpg",
-            caption: "Caption describing the figure.",
-          },
-          {
-            type: "video",
-            src: "assets/videos/demo.mp4",
-            poster: "", // optional still shown before playback
-            caption: "A short demo video.",
-          },
-          {
-            type: "embed",
-            src: "https://www.youtube.com/embed/VIDEO_ID",
-            caption: "An embedded video.",
-          },
-        ],
+        // media: [
+        //   {
+        //     type: "image",
+        //     src: "assets/images/projects/example.jpg",
+        //     caption: "Caption describing the figure.",
+        //   },
+        //   {
+        //     type: "video",
+        //     src: "assets/videos/demo.mp4",
+        //     poster: "", // optional still shown before playback
+        //     caption: "A short demo video.",
+        //   },
+        //   {
+        //     type: "embed",
+        //     src: "https://www.youtube.com/embed/VIDEO_ID",
+        //     caption: "An embedded video.",
+        //   },
+        // ],
         // Optional related links (paper, code, dataset...).
         links: [
           { label: "Paper", url: "" },
@@ -170,20 +192,23 @@ window.PORTFOLIO = {
         ],
       },
       {
-        slug: "project-two",
-        title: "Project Two",
-        role: "Research Assistant",
-        period: "2020 – 2021",
-        summary: "What this project was about.",
-        body: ["Describe this project here."],
-        tags: ["Topic"],
-        media: [
-          {
-            type: "image",
-            src: "assets/images/projects/example2.jpg",
-            caption: "",
-          },
+        slug: "Teleop",
+        title: "Real-World Teleoperation of a Franka+LEAP hand setup",
+        role: "Main Developper",
+        period: "2026",
+        summary: "Real-Time and Real-World teleoperation of a Franka Arm + LEAP Hand",
+        body: ["Built the entire pipeline to have a real-time control system with 1-to-1 mapping from the operator to the robot.",
+               "Hardware: HTC Vive Tracker for the 6DOF position of the hand, Manus Glove for the joint angles of the hand",
+               "Software: OpenVR to capture hand position, GeoRetargeting from Facebook Research to map hand kinematics to the LEAP kinematics, Polymetis to send the information to the Franka arm. "
         ],
+        tags: ["Franka","Teleoperation","ROS2"],
+        // media: [
+        //   {
+        //     type: "image",
+        //     src: "assets/images/projects/example2.jpg",
+        //     caption: "",
+        //   },
+        // ],
         links: [],
       },
     ],
@@ -197,72 +222,81 @@ window.PORTFOLIO = {
   projects: {
     // Intro paragraphs at the top of the page. Each string is a paragraph.
     intro: [
-      "A selection of projects I have designed and built. Each one links to its code, a demo, or a write-up where available.",
+      "A selection of projects that I am proud of.",
     ],
     // One entry per project. They render top to bottom on the page.
     items: [
       {
         // "slug" gives the section a stable #anchor (projects.html#my-project).
         // Omit it to auto-generate one from the title.
-        slug: "my-project",
-        title: "My Project",
+        slug: "AInterview",
+        title: "AInterview - McHacks 2026",
         // Optional one-line role/subtitle shown under the title.
-        role: "Solo project · Web app",
+        role: "Main Developper - Team of 4",
         // Optional date or date range.
-        period: "2024",
+        period: "2026",
         // One-line summary, shown emphasized at the top of the project.
-        summary: "A sentence summarising what this project is and why it matters.",
+        summary: "An AI agent to conduct speech-to-speech mock interviews based on the job offering, with feedback.",
         // Longer write-up. Each string is its own paragraph.
         body: [
-          "Explain the project: the problem it solves, how you built it, and the interesting technical decisions along the way.",
-          "Add as many paragraphs as you need.",
+          "A fully working app that can conduct a mock interview based on the job position, description and the type of interview that is expected. Also gives feedback and score at the end of the session",
+          "Implemented ElevenLabs AI agents with customizable context based on the type of interview, and used Google Gemini to generate feedback and extract a score.",
+          "Used FastAPI for the backend, Supabase for the database, and TypeScript for the UI",
         ],
-        tags: ["Tech", "Tool", "Domain"],
+        tags: ["FastAPI", "ElevenLabs", "TypeScript"],
         // Images and videos shown in a gallery under the text.
         // type is one of:
         //   "image" — a picture in assets/images/projects/
         //   "video" — a video file you host in assets/videos/
         //   "embed" — a YouTube/Vimeo *embed* URL (…/embed/VIDEO_ID)
-        media: [
-          {
-            type: "image",
-            src: "assets/images/projects/example.jpg",
-            caption: "Caption describing the screenshot or figure.",
-          },
-          {
-            type: "video",
-            src: "assets/videos/demo.mp4",
-            poster: "", // optional still shown before playback
-            caption: "A short demo video.",
-          },
-          {
-            type: "embed",
-            src: "https://www.youtube.com/embed/VIDEO_ID",
-            caption: "An embedded video.",
-          },
-        ],
+        // media: [
+        //   {
+        //     type: "image",
+        //     src: "assets/images/projects/example.jpg",
+        //     caption: "Caption describing the screenshot or figure.",
+        //   },
+        //   {
+        //     type: "video",
+        //     src: "assets/videos/demo.mp4",
+        //     poster: "", // optional still shown before playback
+        //     caption: "A short demo video.",
+        //   },
+        //   {
+        //     type: "embed",
+        //     src: "https://www.youtube.com/embed/VIDEO_ID",
+        //     caption: "An embedded video.",
+        //   },
+        // ],
         // Optional related links (live demo, code, write-up...).
-        links: [
-          { label: "Live demo", url: "" },
-          { label: "Code", url: "" },
+         links: [
+          { label: "GitHub", url: "https://github.com/Helium-bre/AInterview", icon: "github" },
         ],
       },
       {
-        slug: "another-project",
-        title: "Another Project",
-        role: "Team of 3",
+        slug: "Signify",
+        title: "Signify - MAIS Hacks 2025",
+        role: "Machine Learning Developper - Team of 2",
         period: "2023",
-        summary: "What this project was about.",
-        body: ["Describe this project here."],
-        tags: ["Tech"],
-        media: [
-          {
-            type: "image",
-            src: "assets/images/projects/example2.jpg",
-            caption: "",
-          },
+        summary: "Sign-to-Speech translator and Facial Recognition for visually impaired patients",
+        body: ["A real-time app that can translate sign language into speech. Unlike most Sign-to-Speech pipelines, Signify can take video input and capture motion, meaning that it can translate signs that are based on a motion",
+               "The main model is a RNN implemented using Tensorflow, and has been trained using a custom dataset. It classify signs with 70% accuracy in evaluation settings.",
+               "The data has been preprocessed by turning RGB video into markpoints using OpenCV and the mediapipe library.",
+               "My first time creating an AI in a hackathon. Built everything in 24 hours and got third place."
         ],
-        links: [],
+        tags: ["TensorFlow", "OpenCV", "HuggingFace"],
+        // media: [
+        //   {
+        //     type: "image",
+        //     src: "assets/images/projects/example2.jpg",
+        //     caption: "",
+        //   },
+        // ],
+        // Each entry becomes a button under the project. "icon" is optional
+        // and must match a key in assets/js/icons.js (github, link, ...);
+        // it defaults to the generic link icon.
+        links: [
+          { label: "GitHub", url: "https://github.com/Oscar-T24/Signify-", icon: "github" },
+        ],
       },
     ],
   },

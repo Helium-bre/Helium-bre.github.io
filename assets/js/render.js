@@ -19,6 +19,9 @@
         '<a class="button button--primary" href="research.html">View research' +
           window.Icons.svg("arrow", "icon--sm") +
           "</a>",
+        '<a class="button button--primary" href="projects.html">View projects' +
+          window.Icons.svg("arrow", "icon--sm") +
+          "</a>",
         '<a class="button button--ghost" href="#contact">Get in touch</a>',
       ];
       if (p.resumeUrl)
