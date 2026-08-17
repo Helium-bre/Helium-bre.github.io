@@ -3,13 +3,13 @@
 A minimalist personal website to showcase your **career, education, and
 achievements** on the home page, plus dedicated **Projects** and **Research**
 pages describing the things you have built and your lab work (with images and
-videos). Built with plain HTML, CSS, and JavaScript — no frameworks and no
-build step — so it deploys to GitHub Pages as-is.
+videos). Built with plain HTML, CSS, and JavaScript - no frameworks and no
+build step - so it deploys to GitHub Pages as-is.
 
 ## Quick start
 
 All of your content lives in **one file**: [`assets/data/content.js`](assets/data/content.js).
-Open it, replace the placeholder text, and you're done — no HTML editing
+Open it, replace the placeholder text, and you're done - no HTML editing
 required. Both pages render themselves from that data.
 
 ### Preview locally
@@ -100,7 +100,7 @@ list. Media items can be:
 // A video file you host yourself (put it in assets/videos/)
 { type: "video", src: "assets/videos/demo.mp4", poster: "", caption: "..." }
 
-// An embedded YouTube/Vimeo video — use the EMBED url, not the watch url:
+// An embedded YouTube/Vimeo video - use the EMBED url, not the watch url:
 //   YouTube: https://www.youtube.com/embed/VIDEO_ID
 //   Vimeo:   https://player.vimeo.com/video/VIDEO_ID
 { type: "embed", src: "https://www.youtube.com/embed/VIDEO_ID", caption: "..." }

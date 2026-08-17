@@ -2,7 +2,7 @@
  * Site content
  * =============
  * This is the ONLY file you need to edit to update the website's content.
- * It is plain data — no HTML required. The renderer (assets/js/render.js)
+ * It is plain data - no HTML required. The renderer (assets/js/render.js)
  * turns each entry below into the matching section on the page.
  *
  * Tips:
@@ -17,7 +17,7 @@ window.PORTFOLIO = {
   /* ---------------------------------------------------------------- */
   profile: {
     name: "Hugo HE",
-    // Short professional title shown under your name.
+    // Short professional title shown under Hugo He.
     title: "Computer Eng. @ McGill - Research Assistant @ MRL",
     // One-line tagline for the hero section.
     tagline: "Your average tech fan",
@@ -164,9 +164,9 @@ window.PORTFOLIO = {
         tags: ["Simulation", "HTC Vive", "Genesis AI", "robomimic"],
         // Images and videos shown in a gallery under the text.
         // type is one of:
-        //   "image" — a picture in assets/images/projects/
-        //   "video" — a video file you host in assets/videos/
-        //   "embed" — a YouTube/Vimeo *embed* URL (…/embed/VIDEO_ID)
+        //   "image" - a picture in assets/images/projects/
+        //   "video" - a video file you host in assets/videos/
+        //   "embed" - a YouTube/Vimeo *embed* URL (…/embed/VIDEO_ID)
         // media: [
         //   {
         //     type: "image",
@@ -246,9 +246,9 @@ window.PORTFOLIO = {
         tags: ["FastAPI", "ElevenLabs", "TypeScript"],
         // Images and videos shown in a gallery under the text.
         // type is one of:
-        //   "image" — a picture in assets/images/projects/
-        //   "video" — a video file you host in assets/videos/
-        //   "embed" — a YouTube/Vimeo *embed* URL (…/embed/VIDEO_ID)
+        //   "image" - a picture in assets/images/projects/
+        //   "video" - a video file you host in assets/videos/
+        //   "embed" - a YouTube/Vimeo *embed* URL (…/embed/VIDEO_ID)
         // media: [
         //   {
         //     type: "image",
