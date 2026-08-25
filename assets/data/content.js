@@ -2,7 +2,7 @@
  * Site content
  * =============
  * This is the ONLY file you need to edit to update the website's content.
- * It is plain data — no HTML required. The renderer (assets/js/render.js)
+ * It is plain data - no HTML required. The renderer (assets/js/render.js)
  * turns each entry below into the matching section on the page.
  *
  * Tips:
@@ -17,10 +17,10 @@ window.PORTFOLIO = {
   /* ---------------------------------------------------------------- */
   profile: {
     name: "Hugo HE",
-    // Short professional title shown under your name.
+    // Short professional title shown under Hugo He.
     title: "Computer Eng. @ McGill - Research Assistant @ MRL",
     // One-line tagline for the hero section.
-    tagline: "Your average tech fan",
+    tagline: "Your average tech fan. Make sure to check out my research and projects!",
     // A few sentences about you. Each string is its own paragraph.
     about: [
       "Currently in my last year of Bachelor's at McGill University. ",
@@ -164,9 +164,9 @@ window.PORTFOLIO = {
         tags: ["Simulation", "HTC Vive", "Genesis AI", "robomimic"],
         // Images and videos shown in a gallery under the text.
         // type is one of:
-        //   "image" — a picture in assets/images/projects/
-        //   "video" — a video file you host in assets/videos/
-        //   "embed" — a YouTube/Vimeo *embed* URL (…/embed/VIDEO_ID)
+        //   "image" - a picture in assets/images/projects/
+        //   "video" - a video file you host in assets/videos/
+        //   "embed" - a YouTube/Vimeo *embed* URL (…/embed/VIDEO_ID)
         // media: [
         //   {
         //     type: "image",
@@ -210,6 +210,33 @@ window.PORTFOLIO = {
         //   },
         // ],
         links: [],
+        // media: [
+        //   {
+        //     type: "embed",
+        //     src: "https://youtube.com/shorts/f_ax1rGI4rk?feature=share",
+        //     caption: "Teleoperation of LEAP Hand",
+        //   }
+        // ],
+      },
+      {
+        slug: "World Model",
+        title: "Robotics World Model with Tactile feedback",
+        role: "Research Assistant",
+        period: "2026",
+        summary: "A World Model similar to Interactive World Simulator, but with tactile feedback",
+        body: ["Model that has  tactile feedback for better world comprehension, and that will be tested in simulation and real world experiments.",
+               "Assisted on the integration of the FlexiTac tactile sensors on the real-world setup",
+               "Main Developper of the two simulation environments and their automatic datacollection scripts."
+        ],
+        tags: ["World Model","Tactile"],
+        // media: [
+        //   {
+        //     type: "image",
+        //     src: "assets/images/projects/example2.jpg",
+        //     caption: "",
+        //   },
+        // ],
+        links: [],
       },
     ],
   },
@@ -226,6 +253,58 @@ window.PORTFOLIO = {
     ],
     // One entry per project. They render top to bottom on the page.
     items: [
+            {
+        // "slug" gives the section a stable #anchor (projects.html#my-project).
+        // Omit it to auto-generate one from the title.
+        slug: "franka_control",
+        title: "Franka Arm Controller",
+        // Optional one-line role/subtitle shown under the title.
+        role: "Author",
+        // Optional date or date range.
+        period: "2026",
+        // One-line summary, shown emphasized at the top of the project.
+        summary: "A easy to use python library to teleoperate a Franka Arm using HTC VIVE devices",
+        // Longer write-up. Each string is its own paragraph.
+        body: [
+          "Allows real-time 1-to-1 control of a Franka armm using VR controllers, without the need to write any extra code",
+          "Uses Facebook's Polymetis library for communication with the Franka arm",
+        ],
+        tags: ["Polymetis", "HTC VIVE", "Franka"],
+        // Images and videos shown in a gallery under the text.
+        // type is one of:
+        //   "image" - a picture in assets/images/projects/
+        //   "video" - a video file you host in assets/videos/
+        //   "embed" - a YouTube/Vimeo *embed* URL (…/embed/VIDEO_ID)
+        // media: [
+        //   {
+        //     type: "image",
+        //     src: "assets/images/projects/example.jpg",
+        //     caption: "Caption describing the screenshot or figure.",
+        //   },
+        //   {
+        //     type: "video",
+        //     src: "assets/videos/demo.mp4",
+        //     poster: "", // optional still shown before playback
+        //     caption: "A short demo video.",
+        //   },
+        //   {
+        //     type: "embed",
+        //     src: "https://www.youtube.com/embed/VIDEO_ID",
+        //     caption: "An embedded video.",
+        //   },
+        // ],
+        // Optional related links (live demo, code, write-up...).
+         links: [
+          { label: "GitHub", url: "https://github.com/Helium-bre/franka_control", icon: "github" },
+        ],
+        media: [
+          {
+            type: "embed",
+            src: "https://www.youtube.com/embed/zbHXrAdKEYA?si=1Lpu-G3glOf8tY6G",
+            caption: "Teleoperation of Franka Arm",
+          }
+        ],
+      },
       {
         // "slug" gives the section a stable #anchor (projects.html#my-project).
         // Omit it to auto-generate one from the title.
@@ -246,9 +325,9 @@ window.PORTFOLIO = {
         tags: ["FastAPI", "ElevenLabs", "TypeScript"],
         // Images and videos shown in a gallery under the text.
         // type is one of:
-        //   "image" — a picture in assets/images/projects/
-        //   "video" — a video file you host in assets/videos/
-        //   "embed" — a YouTube/Vimeo *embed* URL (…/embed/VIDEO_ID)
+        //   "image" - a picture in assets/images/projects/
+        //   "video" - a video file you host in assets/videos/
+        //   "embed" - a YouTube/Vimeo *embed* URL (…/embed/VIDEO_ID)
         // media: [
         //   {
         //     type: "image",
@@ -276,7 +355,7 @@ window.PORTFOLIO = {
         slug: "Signify",
         title: "Signify - MAIS Hacks 2025",
         role: "Machine Learning Developper - Team of 2",
-        period: "2023",
+        period: "2025",
         summary: "Sign-to-Speech translator and Facial Recognition for visually impaired patients",
         body: ["A real-time app that can translate sign language into speech. Unlike most Sign-to-Speech pipelines, Signify can take video input and capture motion, meaning that it can translate signs that are based on a motion",
                "The main model is a RNN implemented using Tensorflow, and has been trained using a custom dataset. It classify signs with 70% accuracy in evaluation settings.",

@@ -70,7 +70,7 @@
   /**
    * External link button; returns "" when the url is empty.
    * "link.icon" is optional and must match a key in icons.js.
-   * With iconFirst, the icon leads the label at full size — the pill style
+   * With iconFirst, the icon leads the label at full size - the pill style
    * used by the contact section.
    */
   function linkMarkup(link, className, iconFirst) {

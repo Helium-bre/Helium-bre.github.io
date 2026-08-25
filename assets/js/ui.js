@@ -3,7 +3,7 @@
  * ============
  * Theme (light/dark) toggle, mobile navigation menu, and scroll-spy that
  * highlights the nav link of the section currently in view. None of this is
- * required for the content to render — it just adds polish.
+ * required for the content to render - it just adds polish.
  */
 (function () {
   "use strict";
