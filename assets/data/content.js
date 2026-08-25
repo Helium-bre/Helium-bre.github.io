@@ -210,6 +210,13 @@ window.PORTFOLIO = {
         //   },
         // ],
         links: [],
+        // media: [
+        //   {
+        //     type: "embed",
+        //     src: "https://youtube.com/shorts/f_ax1rGI4rk?feature=share",
+        //     caption: "Teleoperation of LEAP Hand",
+        //   }
+        // ],
       },
       {
         slug: "World Model",
@@ -289,6 +296,13 @@ window.PORTFOLIO = {
         // Optional related links (live demo, code, write-up...).
          links: [
           { label: "GitHub", url: "https://github.com/Helium-bre/franka_control", icon: "github" },
+        ],
+        media: [
+          {
+            type: "embed",
+            src: "https://www.youtube.com/embed/zbHXrAdKEYA?si=1Lpu-G3glOf8tY6G",
+            caption: "Teleoperation of Franka Arm",
+          }
         ],
       },
       {
