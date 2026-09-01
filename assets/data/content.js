@@ -20,7 +20,7 @@ window.PORTFOLIO = {
     // Short professional title shown under Hugo He.
     title: "Computer Eng. @ McGill - Research Assistant @ MRL",
     // One-line tagline for the hero section.
-    tagline: "Your average tech fan. Make sure to check out my research and projects!",
+    tagline: "Your average tech fan. Make sure to check out my research and projects! (Website is still a work in progress)",
     // A few sentences about you. Each string is its own paragraph.
     about: [
       "Currently in my last year of Bachelor's at McGill University. ",
@@ -210,13 +210,13 @@ window.PORTFOLIO = {
         //   },
         // ],
         links: [],
-        // media: [
-        //   {
-        //     type: "embed",
-        //     src: "https://youtube.com/shorts/f_ax1rGI4rk?feature=share",
-        //     caption: "Teleoperation of LEAP Hand",
-        //   }
-        // ],
+        media: [
+          {
+            type: "embed",
+            src: "https://www.youtube.com/embed/f_ax1rGI4rk?rel=0",
+            caption: "Teleoperation of LEAP Hand",
+          }
+        ],
       },
       {
         slug: "World Model",
