@@ -167,24 +167,24 @@ window.PORTFOLIO = {
         //   "image" - a picture in assets/images/projects/
         //   "video" - a video file you host in assets/videos/
         //   "embed" - a YouTube/Vimeo *embed* URL (…/embed/VIDEO_ID)
-        // media: [
-        //   {
-        //     type: "image",
-        //     src: "assets/images/projects/example.jpg",
-        //     caption: "Caption describing the figure.",
-        //   },
-        //   {
-        //     type: "video",
-        //     src: "assets/videos/demo.mp4",
-        //     poster: "", // optional still shown before playback
-        //     caption: "A short demo video.",
-        //   },
-        //   {
-        //     type: "embed",
-        //     src: "https://www.youtube.com/embed/VIDEO_ID",
-        //     caption: "An embedded video.",
-        //   },
-        // ],
+        media: [
+          {
+            type: "image",
+            src: "assets/images/research/dexsuite_presentation.png",
+            caption: "Dexsuite, a Simulator Framework and Benchmark for Dexterous Manipulation",
+          },
+          // {
+          //   type: "video",
+          //   src: "assets/videos/demo.mp4",
+          //   poster: "", // optional still shown before playback
+          //   caption: "A short demo video.",
+          // },
+          // {
+          //   type: "embed",
+          //   src: "https://www.youtube.com/embed/VIDEO_ID",
+          //   caption: "An embedded video.",
+          // },
+        ],
         // Optional related links (paper, code, dataset...).
         links: [
           { label: "Paper", url: "" },
@@ -328,24 +328,24 @@ window.PORTFOLIO = {
         //   "image" - a picture in assets/images/projects/
         //   "video" - a video file you host in assets/videos/
         //   "embed" - a YouTube/Vimeo *embed* URL (…/embed/VIDEO_ID)
-        // media: [
-        //   {
-        //     type: "image",
-        //     src: "assets/images/projects/example.jpg",
-        //     caption: "Caption describing the screenshot or figure.",
-        //   },
-        //   {
-        //     type: "video",
-        //     src: "assets/videos/demo.mp4",
-        //     poster: "", // optional still shown before playback
-        //     caption: "A short demo video.",
-        //   },
-        //   {
-        //     type: "embed",
-        //     src: "https://www.youtube.com/embed/VIDEO_ID",
-        //     caption: "An embedded video.",
-        //   },
-        // ],
+        media: [
+          // {
+          //   type: "image",
+          //   src: "assets/images/projects/example.jpg",
+          //   caption: "Caption describing the screenshot or figure.",
+          // },
+          // {
+          //   type: "video",
+          //   src: "assets/videos/demo.mp4",
+          //   poster: "", // optional still shown before playback
+          //   caption: "A short demo video.",
+          // },
+          {
+            type: "embed",
+            src: "https://www.youtube.com/embed/PWLXdFoZ55o",
+            caption: "Presentation of AInterview",
+          },
+        ],
         // Optional related links (live demo, code, write-up...).
          links: [
           { label: "GitHub", url: "https://github.com/Helium-bre/AInterview", icon: "github" },
@@ -374,7 +374,9 @@ window.PORTFOLIO = {
         // and must match a key in assets/js/icons.js (github, link, ...);
         // it defaults to the generic link icon.
         links: [
-          { label: "GitHub", url: "https://github.com/Oscar-T24/Signify-", icon: "github" },
+          { label: "GitHub", url: "https://github.com/Oscar-T24/Signify-", icon: "github",
+           },
+          {label: "DevPost", url: "https://devpost.com/software/signify-n3xt87", },
         ],
       },
     ],
